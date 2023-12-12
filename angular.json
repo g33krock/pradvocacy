@@ -57,10 +57,12 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "pradvocacy:build:production"
+              "buildTarget": "pradvocacy:build:production",
+              "proxyConfig": "proxy.conf.js"
             },
             "development": {
-              "buildTarget": "pradvocacy:build:development"
+              "buildTarget": "pradvocacy:build:development",
+              "proxyConfig": "proxy.conf.js"
             }
           },
           "defaultConfiguration": "development"
